@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import db from './config/connection.js';
 import routes from './routes/index.js';
 
+dotenv.config();
 await db();
 
 const app = express();
